@@ -8,11 +8,22 @@
 ##
 
 ## Features
+We provide 6 files, including:  
+1.miRNA doc2vec features 128  
+2.miRNA role2vec features 128
+3.miRNA GCN features 128  
+4.Gene doc2vec features 128(derived from 3'UTR sequence)
+5.Gene role2vec features 128
+6.gene GCN features 128  
+
 ## Datasets
-By using the Features and Datasets, we can get the dataset for the five-fold cross validation.(TypeA,B)
+By using the Features and Datasets, we can get the dataset for the five-fold cross validation.(TypeA,B)  
+
 ## Code
 Fisrt use the preprocess to generate 10 files(CV typeA) or 11 files(CV typeB, with one more discarded file)  
-CV typeB could be used to generate scores for test files the discarded files, as well as novel pairs( as long as those pairs are with the same format as training set)  
+CV typeB could be used to generate scores for test files the discarded files, as well as novel pairs( as long as those pairs are with the same format as training set)
+TF1.13 version has been tested in the env of Tensorflow 1.13
+TF2.3 version has been tested in the env of Tensorflow 2.3 (with the latest nvidia driver).
 ## Models
 
 ## Results
