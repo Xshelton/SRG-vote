@@ -12,9 +12,10 @@ We provide 6 files, including:
 1.miRNA doc2vec features 128  
 2.miRNA role2vec features 128
 3.miRNA GCN features 128  
-4.Gene doc2vec features 128(derived from 3'UTR sequence)
-5.Gene role2vec features 128
-6.gene GCN features 128  
+4.Gene doc2vec features 128(derived from 3'UTR sequence)  
+5.Gene role2vec features 128  
+6.gene GCN features 128
+
 
 ## Datasets
 By using the Features and Datasets, we can get the dataset for the five-fold cross validation.(TypeA,B)  
