@@ -26,7 +26,7 @@ CV typeB could be used to generate scores for test files the discarded files, as
 TF1.13 version has been tested in the env of Tensorflow 1.13  
 TF2.3 version has been tested in the env of Tensorflow 2.3 (with the latest nvidia driver).  
 ## Models
-
+The predict models from files(miRNA embedding files, and gene embedding files,generate automatically and produce the scores, only tf1.13 version for now)
 ## Results
 due to the limitation of 25MB of file for github.  
 the file is divided into small files.  
