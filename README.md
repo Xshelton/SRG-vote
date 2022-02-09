@@ -27,6 +27,27 @@ TF1.13 version has been tested in the env of Tensorflow 1.13
 TF2.3 version has been tested in the env of Tensorflow 2.3 (with the latest nvidia driver).  
 ## Models
 The predict models from files(miRNA embedding files, and gene embedding files,generate automatically and produce the scores, only tf1.13 version for now)
+![image](https://user-images.githubusercontent.com/33061177/153279013-f56ce762-665b-4114-9c96-dbc1d916519a.png)
+How to use the Model.
+First prepare the csvfile of gene and miRNA.
+Secondly, unzip the models.
+If you want to retrain the whole model:  
+the train_pre function should be like this:  
+def train_pre(file,i,MMode):
+   tf.reset_default_graph() 
+   train_it(file,0,0,i,'train_all_dataset for the predict',MMode)#train_some_dataset_for ediion
+   tf.reset_default_graph() 
+   auc=train_it(file,0,0,i,'predict',MMode)
+   tf.reset_default_graph() 
+   return auc  
+   
+ If you want to regenerate the score:  
+ #delete or denote the first 3 lines.Then run the program.  
+ def train_pre(file,i,MMode):
+   auc=train_it(file,0,0,i,'predict',MMode)
+   tf.reset_default_graph() 
+   return auc
+ 
 ## Results
 due to the limitation of 25MB of file for github.  
 the file is divided into small files.  
