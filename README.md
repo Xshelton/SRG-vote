@@ -33,20 +33,20 @@ First prepare the csvfile of gene and miRNA.
 Secondly, unzip the models.
 If you want to retrain the whole model:  
 the train_pre function should be like this:  
-def train_pre(file,i,MMode):
-   tf.reset_default_graph() 
-   train_it(file,0,0,i,'train_all_dataset for the predict',MMode)#train_some_dataset_for ediion
-   tf.reset_default_graph() 
-   auc=train_it(file,0,0,i,'predict',MMode)
-   tf.reset_default_graph() 
-   return auc  
+def train_pre(file,i,MMode):  
+   tf.reset_default_graph()   
+   train_it(file,0,0,i,'train_all_dataset for the predict',MMode)
+   tf.reset_default_graph()   
+   auc=train_it(file,0,0,i,'predict',MMode)  
+   tf.reset_default_graph()   
+   return auc    
    
  If you want to regenerate the score:  
  #delete or denote the first 3 lines.Then run the program.  
- def train_pre(file,i,MMode):
-   auc=train_it(file,0,0,i,'predict',MMode)
-   tf.reset_default_graph() 
-   return auc
+ def train_pre(file,i,MMode):  
+   auc=train_it(file,0,0,i,'predict',MMode)  
+   tf.reset_default_graph()   
+   return auc  
  
 ## Results
 due to the limitation of 25MB of file for github.  
