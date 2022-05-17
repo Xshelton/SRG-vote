@@ -3,9 +3,9 @@
 ![SRGvote6 edited framework](https://user-images.githubusercontent.com/33061177/153282930-295cdfd2-03b5-401c-883e-ac72a3f6fa25.png)
 
 ## citation
--------------
----------------------
-----------------------------------
+Please cite our paper if your find the features/code/results useful.
+Thanks in advance.
+Xie W, Zheng Z, Zhang W, et al. SRG-vote: Predicting miRNA-gene relationships via embedding and LSTM ensemble[J]. IEEE Journal of Biomedical and Health Informatics, 2022.
 ##
 
 ## Features
